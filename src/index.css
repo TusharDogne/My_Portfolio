@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #1E40AF;
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1E40AF;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1E3A8A;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-royal-800 via-royal-600 to-gold-500;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-royal-800 text-white font-semibold rounded-lg 
+           hover:bg-royal-700 transition-all duration-300 
+           hover:shadow-lg hover:shadow-royal-800/25 
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-royal-800 text-royal-800 font-semibold rounded-lg 
+           hover:bg-royal-800 hover:text-white transition-all duration-300 
+           active:scale-95;
+  }
+
+  .btn-gold {
+    @apply px-6 py-3 bg-gold-500 text-white font-semibold rounded-lg 
+           hover:bg-gold-600 transition-all duration-300 
+           hover:shadow-lg hover:shadow-gold-500/25 
+           active:scale-95;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-royal-800 to-gold-500 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}

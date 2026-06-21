@@ -222,22 +222,22 @@ export default function Hero() {
         }
         className = "order-1 lg:order-2 flex justify-center" >
         <
-        div className = "relative" > { /* Main circle with gradient border */ } <
         div className = "w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-royal-800 via-royal-600 to-gold-500 p-1" >
         <
-        div className = "w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden" > { /* Placeholder for profile image - replace with actual image */ } <
-        div className = "w-full h-full bg-gradient-to-br from-royal-50 to-gold-50 flex items-center justify-center" >
+        div className = "w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden" >
+
         <
-        div className = "text-center" >
+        div className = "w-full h-full overflow-hidden rounded-full" >
         <
-        div className = "w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-4 bg-gradient-to-br from-royal-800 to-royal-600 rounded-full flex items-center justify-center shadow-xl" >
+        img src = "/images/profile.jpeg"
+        alt = "Tushar Dogne"
+        className = "w-full h-full object-cover" /
+        >
         <
-        span className = "text-5xl sm:text-6xl font-poppins font-bold text-white" > TD < /span> < /
-        div > <
-        p className = "text-gray-500 text-sm font-medium" > c: \Users\ ayudo\ Pictures\ WhatsApp Image 2026 - 06 - 17 at 8.02 .19 PM.jpeg < /p> < /
-        div > <
-        /div> < /
-        div > <
+        /div>
+
+        <
+        /div> <
         /div>
 
         { /* Floating badges */ } <

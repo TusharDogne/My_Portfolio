@@ -234,7 +234,7 @@ export default function Hero() {
         <
         span className = "text-5xl sm:text-6xl font-poppins font-bold text-white" > TD < /span> < /
         div > <
-        p className = "text-gray-500 text-sm font-medium" > Add Your Photo Here < /p> < /
+        p className = "text-gray-500 text-sm font-medium" > c: \Users\ ayudo\ Pictures\ WhatsApp Image 2026 - 06 - 17 at 8.02 .19 PM.jpeg < /p> < /
         div > <
         /div> < /
         div > <
